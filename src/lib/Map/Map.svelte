@@ -1,12 +1,12 @@
 <script context="module" lang="ts">
 	export interface MapContext {
-		getMap: () => Map | null;
+		getMap: () => Mapbox | null;
 		getLoaded: () => Writable<boolean>;
 	}
 </script>
 
 <script lang="ts">
-	import mapboxgl, { Map, MapboxOptions, MapMouseEvent } from 'mapbox-gl';
+	import mapboxgl, { Map as Mapbox, MapboxOptions, MapMouseEvent } from 'mapbox-gl';
 	import { onMount, createEventDispatcher, setContext } from 'svelte';
 	import { Writable, writable } from 'svelte/store';
 	import { mapKey } from '../context';
@@ -19,7 +19,7 @@
 	export let boxSelect: any = undefined;
 
 	// Props intended for binding
-	export let map: Map | null = null;
+	export let map: Mapbox | null = null;
 	export let styleLoaded = false;
 	export let loaded: boolean = false;
 
@@ -47,7 +47,7 @@
 		}
 
 		if (container) {
-			map = new Map({ container, style: 'mapbox://styles/mapbox/streets-v11', ...options });
+			map = new Mapbox({ container, style: 'mapbox://styles/mapbox/streets-v11', ...options });
 		}
 
 		function handleData(event: Event) {

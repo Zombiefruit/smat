@@ -13,7 +13,9 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	},
-	package: {}
+	package: {
+		emitTypes: false
+	}
 };
 
 export default config;

@@ -11,6 +11,7 @@
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
+  "main": "index.js",
   "devDependencies": {
     "@mapbox/mapbox-gl-geocoder": "^4.7.4",
     "@sveltejs/adapter-auto": "next",
