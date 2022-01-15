@@ -1,6 +1,6 @@
 {
   "name": "smat",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -36,5 +36,6 @@
   "type": "module",
   "dependencies": {
     "mapbox-gl": "^2.6.1"
-  }
+  },
+  "repository": "github:zombiefruit/smat"
 }
