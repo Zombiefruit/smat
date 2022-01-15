@@ -18,9 +18,9 @@
 	export let container: HTMLElement | string | undefined = undefined;
 	export let boxSelect: any = undefined;
 
-	// Props more suited to binding
-	export let styleLoaded = false;
+	// Props intended for binding
 	export let map: Map | null = null;
+	export let styleLoaded = false;
 	export let loaded: boolean = false;
 
 	mapboxgl.accessToken = accessToken;
@@ -36,9 +36,6 @@
 		getLoaded: () => loadedStore
 	});
 
-	// expose map and loaded outside
-	export const getMap = () => map;
-	export const isLoaded = () => loadedStore;
 	const dispatch = createEventDispatcher();
 
 	onMount(() => {
