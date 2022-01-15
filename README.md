@@ -1,6 +1,6 @@
 # svelte-mapbox-ts (SMAT)
 
-SMAT is a really minimal svelte implementation of (mapbox-gl)[https://github.com/mapbox/mapbox-gl-js], written in Typescript.
+SMAT is a really minimal svelte implementation of (mapbox-gl)[https://github.com/mapbox/mapbox-gl-js], written in Typescript. Based on https://gitlab.com/jailbreak/svelte-mapbox-gl/-/tree/master.
 
 ## Usage
 
