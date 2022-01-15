@@ -9,7 +9,7 @@
 	import mapboxgl, { Map, MapboxOptions, MapMouseEvent } from 'mapbox-gl';
 	import { onMount, createEventDispatcher, setContext } from 'svelte';
 	import { Writable, writable } from 'svelte/store';
-	import { mapKey } from '../../context';
+	import { mapKey } from '../context';
 	import { getMapEventHandlers } from './get-map-event-handlers';
 
 	export let accessToken: string;

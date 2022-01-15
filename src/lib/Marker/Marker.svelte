@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Marker, LngLat } from 'mapbox-gl';
 	import { onDestroy, getContext, setContext } from 'svelte';
-	import { mapKey, markerKey } from '../../context';
+	import { mapKey, markerKey } from '../context';
 	import type { MapContext } from '../Map/Map.svelte';
 
 	export let coordinates: LngLat;
